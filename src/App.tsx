@@ -146,7 +146,7 @@ function App() {
                     game.</p>
                 <button
                     className="px-5 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg">
-                    Start stacking
+                    Start staking
                 </button>
             </header>
             <main className="flex flex-col items-center justify-center max-w-[400px] md:max-w-[100%]">
