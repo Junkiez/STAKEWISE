@@ -28,9 +28,9 @@ function App() {
     return (<>
             <nav
                 className={`${scrolled ? 'bg-blue-600' : 'bg-transparent'}  transition-all fixed top-0 z-20 border-gray-200 w-[100%]`}>
-                <div className="bg-gradient-to-r h-[50px] from-cyan-400 to-lime-300">
+                <div className="bg-gradient-to-r h-[50px] from-cyan-400 to-lime-300 w-[100%]">
                     <div
-                        className="max-w-screen-xl mx-auto px-4 py-1 flex items-start justify-between text-black sm:items-center md:px-8">
+                        className="mx-auto px-4 py-1 flex items-start justify-between text-black sm:items-center md:px-8  w-[100%]">
                         <div className="flex-1 justify-center flex items-start gap-x-4 sm:items-center">
                             <span className="font-medium p-2">
                                 <i className="  hidden md:inline-block">StakeWise V3 is out soon!</i> <a
@@ -48,7 +48,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-                <div className="max-w-screen-xl mx-10 flex flex-wrap items-center justify-between mx-auto p-2">
+                <div className="mx-10 flex flex-wrap items-center justify-between mx-auto p-2">
                     <a href="/#" className="flex items-center">
                         <img src={logo} className="w-[25px]" alt=""/><span>STAKEWISE</span>
                     </a>
@@ -152,7 +152,7 @@ function App() {
             <main className="flex flex-col items-center justify-center max-w-[400px] md:max-w-[100%]">
                 <section className="flex flex-col items-center justify-center m-4 lg:m-24">
                     <ScrollAnimation animateIn='fadeIn'>
-                        <h2 className="text-grey-100 max-w-[400px] md:max-w-[1000px] text-4xl font-bold m-8">Earn
+                        <h2 className="text-grey-100 max-w-[400px] md:max-w-[100%] text-4xl font-bold m-8">Earn
                             rewards from staking Ether</h2>
                     </ScrollAnimation>
                     <p className="w-[400px] md:w-[600px] text-gray-300 text-xl font-light">By depositing ETH into
@@ -164,7 +164,7 @@ function App() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 m-2">
                         <ScrollAnimation animateIn='fadeIn'>
                             <div
-                                className="grid grid-cols-6 max-w-[400px] md:max-w-[1000px] gap-4 transition-all p-8 md:p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
+                                className="grid grid-cols-6 max-w-[400px] md:max-w-[100%] gap-4 transition-all p-8 md:p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
                                 <svg className="col-auto" width={50} height={50} xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 60 60">
                                     <g transform="matrix(.7742 0 0 .7742 -8.71 -8.71)" fill="#fd5d93">
@@ -188,7 +188,7 @@ function App() {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn='fadeIn'>
                             <div
-                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[1000px]  transition-all p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
+                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[100%]  transition-all p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
                                 <svg className="col-auto" width={50} height={50} xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 76.002 60">
                                     <path
@@ -213,7 +213,7 @@ function App() {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn='fadeIn'>
                             <div
-                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[1000px]  transition-all p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
+                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[100%]  transition-all p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
                                 <svg className="col-auto" width={50} height={50} xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 62.553 60">
                                     <g fill="#ff8d72">
@@ -232,7 +232,7 @@ function App() {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn='fadeIn'>
                             <div
-                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[1000px]  transition-all p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
+                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[100%]  transition-all p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
                                 <svg className="col-auto" width={50} height={50} xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 60 60">
                                     <path
@@ -250,10 +250,10 @@ function App() {
                     </div>
                 </section>
                 <section className="w-[100%] py-14 m-24 ">
-                    <div className="max-w-screen-xl text-left mx-auto md:px-8">
+                    <div className="text-left mx-auto md:px-8">
                         <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
                             <div
-                                className="max-w-[400px] md:max-w-xl px-0 md:px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl ">
+                                className="max-w-[400px] md:max-w-xl px-0 md:px-4 space-y-3 mt-6 sm:px-0 md:mt-0">
                                 <ScrollAnimation animateIn='fadeIn'>
                                     <h2 className="text-grey-100 text-5xl md:text-6xl font-bold m-8">
                                         Join staking pool
@@ -269,15 +269,15 @@ function App() {
                                         natus
                                         error sit voluptatem accusantium doloremque laudantium
                                     </p>
-                                    <ul className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[1000px] font-normal text-gray-300">
-                                        <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[1000px]">No limits -
+                                    <ul className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[100%] font-normal text-gray-300">
+                                        <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[100%]">No limits -
                                             stake
                                             any amount
                                         </li>
-                                        <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[1000px]">Track your
+                                        <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[100%]">Track your
                                             earnings in real time
                                         </li>
-                                        <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[1000px]">Use your stake
+                                        <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[100%]">Use your stake
                                             in
                                             DeFi with StakeWise tokens
                                         </li>
@@ -320,12 +320,12 @@ function App() {
                             <div
                                 className="max-w-[400px] md:max-w-xl ml-6 md:ml-0 px-0 md:px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
                                 <ScrollAnimation animateIn='fadeIn'>
-                                    <h2 className="text-grey-100 max-w-[400px] md:max-w-[1000px] text-4xl md:text-6xl font-bold m-0 md:m-8">
+                                    <h2 className="text-grey-100 max-w-[400px] md:max-w-[100%] text-4xl md:text-6xl font-bold m-0 md:m-8">
                                         Tokenized staking
                                     </h2>
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn='fadeIn'>
-                                    <p className="mt-3 ml-0 md:ml-8 max-w-[400px] md:max-w-[1000px] text-xl font-normal text-gray-300">
+                                    <p className="mt-3 ml-0 md:ml-8 max-w-[400px] md:max-w-[100%] text-xl font-normal text-gray-300">
                                         Explore the world of DeFi together with StakeWise!
                                         We mint Deposit Tokens and Reward Tokens for every ETH you deposit & earn. Use
                                         them
@@ -334,12 +334,12 @@ function App() {
                                         and
                                         wallet that supports ERC-20.
                                     </p>
-                                    <ul className="mt-3 ml-0 md:ml-8 max-w-[400px] md:max-w-[1000px] text-xl font-normal text-gray-300">
-                                        <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[1000px]">Enables exit
+                                    <ul className="mt-3 ml-0 md:ml-8 max-w-[400px] md:max-w-[100%] text-xl font-normal text-gray-300">
+                                        <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[100%]">Enables exit
                                             from
                                             staking before Phase 2
                                         </li>
-                                        <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[1000px]">Opens
+                                        <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[100%]">Opens
                                             opportunities to generate additional yield
                                         </li>
                                     </ul>
