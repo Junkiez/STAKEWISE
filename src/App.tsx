@@ -137,7 +137,7 @@ function App() {
             </nav>
 
             <header className="w-[100%] flex flex-col items-center justify-center">
-                <h1 className="text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-cyan-500 m-10">ETH
+                <h1 className="text-7xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-cyan-500 m-10">ETH
                     staking<br/>
                     made effortless</h1>
                 <p className="w-[300px] md:w-[600px] text-2xl text-gray-400 font-normal">Our resilient infrastructure
@@ -357,13 +357,16 @@ function App() {
                         </div>
                     </div>
                 </section>
-                <section className="flex flex-col items-center justify-center m-4 sm:m-8">
+                <section className="flex flex-col items-center justify-center m-4 lg:m-24">
                     <ScrollAnimation animateIn='fadeIn'>
                         <h2 className="text-grey-100 text-3xl sm:text-4xl font-bold m-4 sm:m-8">Integrations</h2>
                     </ScrollAnimation>
+
                     <ScrollAnimation animateIn='fadeIn'>
                         <p className="text-gray-300 w-[400px] md:w-[600px] text-base sm:text-xl font-light px-4 sm:px-0 max-w-2xl text-center">Our
                             staking services and tokens are integrated with the leading protocols and apps in DeFi.</p>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn='fadeIn'>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center mt-4">
                             <div className="p-4">
                                 <img className="max-w-[150px] md:max-w-[250px] mx-auto" src={inch} alt="1inch"/>
@@ -377,15 +380,15 @@ function App() {
                         </div>
                     </ScrollAnimation>
                 </section>
-                <section className="flex flex-col items-center justify-center m-0 md:m-24">
+                <section className="flex flex-col items-center justify-center m-4 lg:m-24">
                     <ScrollAnimation animateIn='fadeIn'>
                         <h2 className="text-grey-100 text-4xl font-bold m-8">Keep in touch</h2>
                     </ScrollAnimation>
+                    <p className="w-[400px] md:w-[600px] text-gray-300 text-xl font-light">
+                        For further information about the project, its features, plans, or cooperation, please contact
+                        us on any of the below.
+                    </p>
                     <ScrollAnimation animateIn='fadeIn'>
-                        <p className="max-w-[350px] md:max-w-[600px] text-gray-300 text-xl font-light">For further
-                            information about the project,
-                            its
-                            features, plans or cooperation please contact us on any of the below.</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-2">
                             <div className="my-12">
                                 <div className="flex flex-col items-left justify-center m-8">
@@ -424,19 +427,19 @@ function App() {
                                              xmlns="http://www.w3.org/2000/svg"
                                              xmlnsXlink="http://www.w3.org/1999/xlink"
                                              viewBox="0 0 512 512" xmlSpace="preserve">
-<g>
-	<g>
-		<path d="M496.327,127.091l-15.673,9.613L281.83,258.623c-7.983,4.859-16.917,7.293-25.84,7.293s-17.826-2.424-25.778-7.262
-			l-0.136-0.084L31.347,134.771l-15.673-9.759L0,115.242v302.717h512V117.488L496.327,127.091z"/>
-	</g>
-</g>
                                             <g>
-	<g>
-		<path d="M25.245,94.041l25.161,15.673l25.161,15.673l171.008,106.527c5.841,3.521,13.082,3.511,18.913-0.042l173.652-106.486
+                                                <g>
+                                                    <path d="M496.327,127.091l-15.673,9.613L281.83,258.623c-7.983,4.859-16.917,7.293-25.84,7.293s-17.826-2.424-25.778-7.262
+			l-0.136-0.084L31.347,134.771l-15.673-9.759L0,115.242v302.717h512V117.488L496.327,127.091z"/>
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <path d="M25.245,94.041l25.161,15.673l25.161,15.673l171.008,106.527c5.841,3.521,13.082,3.511,18.913-0.042l173.652-106.486
 			l25.558-15.673l25.558-15.673H25.245z"/>
-	</g>
-</g>
-</svg>
+                                                </g>
+                                            </g>
+                                        </svg>
                                         &nbsp;&nbsp;&nbsp;
                                         <span className="text-grey-100 text-2xl font-semibold mb-2">Send an email</span>
                                     </div>
