@@ -50,13 +50,13 @@ function App() {
                 </div>
                 <div className="mx-10 flex flex-wrap items-center justify-between mx-auto p-2">
                     <a href="/#" className="flex items-center">
-                        <img src={logo} className="w-[25px]" alt=""/><span>STAKEWISE</span>
+                        <img src={logo} className="w-[25px]" alt=""/><span className="text-white" >STAKEWISE</span>
                     </a>
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                          id="navbar-language">
                         <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent">
                             <a href="#"
-                               className="flex flex-row block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                aria-current="page">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28"
                                      viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ function App() {
                                 &nbsp;Stake</a>
 
                             <a href="#"
-                               className="flex flex-row block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28"
                                      viewBox="0 0 32 32"
                                      stroke-width="1.5">
@@ -78,7 +78,7 @@ function App() {
                                 &nbsp;About</a>
 
                             <a href="#"
-                               className="flex flex-row block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28"
                                      viewBox="0 0 24 24"
                                      stroke-width="1.5">
@@ -88,7 +88,7 @@ function App() {
                                 &nbsp;Features</a>
 
                             <a href="#"
-                               className="flex flex-row block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="28" height="28"
                                      viewBox="0 0 24 24"
                                      stroke-width="1.5" stroke="#fff">
@@ -99,7 +99,7 @@ function App() {
                                 &nbsp;Integration</a>
 
                             <a href="#"
-                               className="flex flex-row block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
                                      viewBox="0 0 24 24"
                                      stroke-width="1.5" fill="#fff">
