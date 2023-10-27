@@ -131,13 +131,14 @@ function App() {
                                       d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>
                             </svg>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="28" height="28"
-                                 viewBox="0 0 24 24" stroke-width="1.5"
-                                 stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
-                            </svg>
-
+                            <a href="https://wellfound.com/company/ethstaking/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="28" height="28"
+                                     viewBox="0 0 24 24" stroke-width="1.5"
+                                     stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+                                </svg>
+                            </a>
 
                         </ul>
                     </div>
@@ -250,7 +251,8 @@ function App() {
                                 <div className="col-span-5 text-left">
                                     <h3 className="text-grey-100 text-2xl font-semibold mb-2">Integration with your
                                         application</h3>
-                                    <p>ethStaking API and smart contracts can be integrated into your application to help
+                                    <p>ethStaking API and smart contracts can be integrated into your application to
+                                        help
                                         your users stake ETH effortlessly.</p>
                                 </div>
                             </div>
@@ -499,7 +501,9 @@ function App() {
                                                   onChange={e => setForm({...form, message: e.target.value})}
                                                   className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border border-blue-900 focus:border-blue-700 shadow-sm rounded-lg"></textarea>
                                     </div>
-                                    { message.color == 'lime' ? <p className="text-center text-lime-500">{message.text}</p> : <p className="text-center text-red-500">{message.text}</p> }
+                                    {message.color == 'lime' ?
+                                        <p className="text-center text-lime-500">{message.text}</p> :
+                                        <p className="text-center text-red-500">{message.text}</p>}
                                     <button type="submit"
                                             className="px-5 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg"
                                     >
@@ -512,12 +516,12 @@ function App() {
                 </section>
             </main>
             <footer className="sm:w-[95%] w-full flex flex-wrap justify-end m-4 font-normal text-sm items-center">
-                <a href="/#" className="text-blue-500 hover:text-blue-700 mr-1 sm:mr-2">Terms & Conditions</a>
+                <a href="https://stakewise.io/terms-and-conditions" className="text-blue-500 hover:text-blue-700 mr-1 sm:mr-2">Terms & Conditions</a>
                 <span className="mx-1 font-semibold sm:hidden">|</span>
                 <a href="/#" className="text-blue-500 hover:text-blue-700 mr-1 sm:mr-2">Careers</a>
                 <span className="mx-1 font-semibold sm:hidden">|</span>
-                <a href="/#" className="text-blue-500 hover:text-blue-700 mr-1 sm:mr-2">GitHub</a>
-                <span className="mx-1 font-semibold sm:hidden">|</span>
+                {/*<a href="/#" className="text-blue-500 hover:text-blue-700 mr-1 sm:mr-2">GitHub</a>
+                <span className="mx-1 font-semibold sm:hidden">|</span>*/}
                 <span className="hidden sm:inline-block">© 2023</span>
                 &nbsp;
                 <a href="/#" className="text-blue-500 hover:text-blue-700">ethStaking Labs</a>
