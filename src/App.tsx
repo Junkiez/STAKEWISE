@@ -1,4 +1,3 @@
-import './App.css'
 import poolDeposits from './assets/poolDeposits.png';
 import poolDeposits2 from './assets/addPoolDeposit.png';
 import ethereum from './assets/ethereum.png';
@@ -11,6 +10,15 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 function App() {
     const [scrolled, setScrolled] = useState(false);
+    const [message, setMessage] = useState({
+        color: "",
+        text: "",
+    });
+    const [form, setForm] = useState({
+        subject: "",
+        email: "",
+        message: "",
+    })
 
     useEffect(() => {
         const handleScroll = () => {
@@ -33,7 +41,7 @@ function App() {
                         className="mx-auto px-4 py-1 flex items-start justify-between text-black sm:items-center md:px-8  w-[100%]">
                         <div className="flex-1 justify-center flex items-start gap-x-4 sm:items-center">
                             <span className="font-medium p-2">
-                                <i className="  hidden md:inline-block">StakeWise V3 is out soon!</i> <a
+                                <i className="  hidden md:inline-block">ethStaking V3 is out soon!</i> <a
                                 href="javascript:(0)"
                                 className="inline-block font-semibold underline duration-150 hover:text-indigo-100 inline-flex items-center gap-x-1">
                                 Learn more about our major release!
@@ -50,12 +58,12 @@ function App() {
                 </div>
                 <div className="mx-10 flex flex-wrap items-center justify-between mx-auto p-2">
                     <a href="/#" className="flex items-center">
-                        <img src={logo} className="w-[25px]" alt=""/><span className="text-white" >STAKEWISE</span>
+                        <img src={logo} className="w-[25px]" alt=""/><span className="text-white">ethStaking</span>
                     </a>
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                          id="navbar-language">
                         <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent">
-                            <a href="#"
+                            <a href="#stake"
                                className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                aria-current="page">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28"
@@ -67,7 +75,7 @@ function App() {
 
                                 &nbsp;Stake</a>
 
-                            <a href="#"
+                            <a href="#about"
                                className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28"
                                      viewBox="0 0 32 32"
@@ -77,7 +85,7 @@ function App() {
                                 </svg>
                                 &nbsp;About</a>
 
-                            <a href="#"
+                            <a href="#features"
                                className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28"
                                      viewBox="0 0 24 24"
@@ -87,7 +95,7 @@ function App() {
                                 </svg>
                                 &nbsp;Features</a>
 
-                            <a href="#"
+                            <a href="#integration"
                                className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="28" height="28"
                                      viewBox="0 0 24 24"
@@ -98,7 +106,7 @@ function App() {
 
                                 &nbsp;Integration</a>
 
-                            <a href="#"
+                            <a href="#contact"
                                className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
                                      viewBox="0 0 24 24"
@@ -144,19 +152,19 @@ function App() {
                     and yield
                     strategies give you the best ETH staking experience in the
                     game.</p>
-                <button
-                    className="px-5 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg">
+                <a href={'https://app.eth-staking.com'}
+                   className="px-5 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg">
                     Start staking
-                </button>
+                </a>
             </header>
             <main className="flex flex-col items-center justify-center max-w-[400px] md:max-w-[100%]">
-                <section className="flex flex-col items-center justify-center m-4 lg:m-24">
+                <section id={'stake'} className="flex flex-col items-center justify-center m-4 lg:m-24">
                     <ScrollAnimation animateIn='fadeIn'>
                         <h2 className="text-grey-100 max-w-[400px] md:max-w-[100%] text-4xl font-bold m-8">Earn
                             rewards from staking Ether</h2>
                     </ScrollAnimation>
                     <p className="w-[400px] md:w-[600px] text-gray-300 text-xl font-light">By depositing ETH into
-                        StakeWise, you will
+                        ethStaking, you will
                         participate in Ethereum's Proof-of-Stake consensus mechanism (staking) and receive ETH
                         rewards
                         in
@@ -180,7 +188,7 @@ function App() {
                                 <div className="col-span-5 text-left">
                                     <h3 className="text-grey-100 text-2xl font-semibold mb-2">Maximum stability &
                                         uptime</h3>
-                                    <p>StakeWise node operators run a highly available and secure infrastructure to
+                                    <p>ethStaking node operators run a highly available and secure infrastructure to
                                         ensure
                                         validators are never penalized.</p>
                                 </div>
@@ -205,7 +213,7 @@ function App() {
                                 </svg>
                                 <div className="col-span-5 text-left">
                                     <h3 className="text-grey-100 text-2xl font-semibold mb-2">DeFi strategies</h3>
-                                    <p>StakeWise is integrated with many DeFi projects that can help you boost your
+                                    <p>ethStaking is integrated with many DeFi projects that can help you boost your
                                         staked
                                         ETH earnings.</p>
                                 </div>
@@ -225,7 +233,7 @@ function App() {
                                 </svg>
                                 <div className="col-span-5 text-left">
                                     <h3 className="text-grey-100 text-2xl font-semibold mb-2">Real-time monitoring</h3>
-                                    <p>StakeWise provides comprehensive details about validators to keep you aware of
+                                    <p>ethStaking provides comprehensive details about validators to keep you aware of
                                         rewards & performance.</p>
                                 </div>
                             </div>
@@ -242,14 +250,14 @@ function App() {
                                 <div className="col-span-5 text-left">
                                     <h3 className="text-grey-100 text-2xl font-semibold mb-2">Integration with your
                                         application</h3>
-                                    <p>StakeWise API and smart contracts can be integrated into your application to help
+                                    <p>ethStaking API and smart contracts can be integrated into your application to help
                                         your users stake ETH effortlessly.</p>
                                 </div>
                             </div>
                         </ScrollAnimation>
                     </div>
                 </section>
-                <section className="w-[100%] py-14 m-24 ">
+                <section id={'about'} className="w-[100%] py-14 m-24 ">
                     <div className="text-left mx-auto md:px-8">
                         <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
                             <div
@@ -279,7 +287,7 @@ function App() {
                                         </li>
                                         <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[100%]">Use your stake
                                             in
-                                            DeFi with StakeWise tokens
+                                            DeFi with ethStaking tokens
                                         </li>
                                     </ul>
                                     <p className="font-medium p-2 mt-3 ml-8">
@@ -314,7 +322,7 @@ function App() {
                         </div>
                     </div>
                 </section>
-                <section className="w-[100%] py-14 m-24">
+                <section id={'features'} className="w-[100%] py-14 m-24">
                     <div className="max-w-screen-xl text-left mx-auto md:px-8">
                         <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
                             <div
@@ -326,7 +334,7 @@ function App() {
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn='fadeIn'>
                                     <p className="mt-3 ml-0 md:ml-8 max-w-[400px] md:max-w-[100%] text-xl font-normal text-gray-300">
-                                        Explore the world of DeFi together with StakeWise!
+                                        Explore the world of DeFi together with ethStaking!
                                         We mint Deposit Tokens and Reward Tokens for every ETH you deposit & earn. Use
                                         them
                                         to
@@ -357,7 +365,7 @@ function App() {
                         </div>
                     </div>
                 </section>
-                <section className="flex flex-col items-center justify-center m-4 lg:m-24">
+                <section id={'integration'} className="flex flex-col items-center justify-center m-4 lg:m-24">
                     <ScrollAnimation animateIn='fadeIn'>
                         <h2 className="text-grey-100 text-3xl sm:text-4xl font-bold m-4 sm:m-8">Integrations</h2>
                     </ScrollAnimation>
@@ -380,7 +388,7 @@ function App() {
                         </div>
                     </ScrollAnimation>
                 </section>
-                <section className="flex flex-col items-center justify-center m-4 lg:m-24">
+                <section id={'contact'} className="flex flex-col items-center justify-center m-4 lg:m-24">
                     <ScrollAnimation animateIn='fadeIn'>
                         <h2 className="text-grey-100 text-4xl font-bold m-8">Keep in touch</h2>
                     </ScrollAnimation>
@@ -444,13 +452,22 @@ function App() {
                                         <span className="text-grey-100 text-2xl font-semibold mb-2">Send an email</span>
                                     </div>
                                     <a className="mr-10 hover:text-white text-blue-600"
-                                       href="mailto:info@stakewise.io">info@stakewise.io</a>
+                                       href="mailto:info@eth-staking.io">info@eth-staking.io</a>
                                 </div>
                             </div>
                             <div className=" shadow-md  mt-12 p-8 bg-[#19283C] rounded-xl">
                                 <form
-                                    onSubmit={(e) => e.preventDefault()}
-                                    className="space-y-5"
+                                    onSubmit={(e) => {
+                                        e.preventDefault()
+                                        if (form.subject && form.email && form.message) {
+                                            setMessage({color: "lime", text: "Your message was successfully sent!"}
+                                            )
+                                            return;
+                                        }
+                                        setMessage({color: "red", text: "Please, fill in all fields"})
+                                    }
+                                    }
+                                    className="space-y-5 w-64 md:w-96"
                                 >
                                     <div>
                                         <label className="font-medium">
@@ -458,7 +475,8 @@ function App() {
                                         </label>
                                         <input
                                             type="text"
-                                            required
+                                            value={form.subject}
+                                            onChange={e => setForm({...form, subject: e.target.value})}
                                             className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border border-blue-900 focus:border-blue-700 shadow-sm rounded-lg"
                                         />
                                     </div>
@@ -468,7 +486,8 @@ function App() {
                                         </label>
                                         <input
                                             type="email"
-                                            required
+                                            value={form.email}
+                                            onChange={e => setForm({...form, email: e.target.value})}
                                             className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border border-blue-900 focus:border-blue-700 shadow-sm rounded-lg"
                                         />
                                     </div>
@@ -476,11 +495,14 @@ function App() {
                                         <label className="font-medium">
                                             Message
                                         </label>
-                                        <textarea required
+                                        <textarea value={form.message}
+                                                  onChange={e => setForm({...form, message: e.target.value})}
                                                   className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border border-blue-900 focus:border-blue-700 shadow-sm rounded-lg"></textarea>
                                     </div>
-                                    <button
-                                        className="px-5 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg">
+                                    { message.color == 'lime' ? <p className="text-center text-lime-500">{message.text}</p> : <p className="text-center text-red-500">{message.text}</p> }
+                                    <button type="submit"
+                                            className="px-5 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg"
+                                    >
                                         Send
                                     </  button>
                                 </form>
@@ -498,7 +520,7 @@ function App() {
                 <span className="mx-1 font-semibold sm:hidden">|</span>
                 <span className="hidden sm:inline-block">© 2023</span>
                 &nbsp;
-                <a href="/#" className="text-blue-500 hover:text-blue-700">StakeWise Labs</a>
+                <a href="/#" className="text-blue-500 hover:text-blue-700">ethStaking Labs</a>
             </footer>
         </>
     )

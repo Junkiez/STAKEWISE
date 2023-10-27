@@ -211,6 +211,10 @@ li::before {
     -webkit-text-size-adjust: 100%;
 }
 
+*, html {
+    scroll-behavior: smooth !important;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
