@@ -58,7 +58,7 @@ function App() {
                 </div>
                 <div className="mx-10 flex flex-wrap items-center justify-between mx-auto p-2">
                     <a href="/#" className="flex items-center">
-                        <img src={logo} className="w-[25px]" alt=""/><span className="text-white">ethStaking</span>
+                        <img src={logo} className="w-[25px]" alt=""/><span className="text-white font-semibold ml-1">ethStaking</span>
                     </a>
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                          id="navbar-language">
