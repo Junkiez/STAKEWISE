@@ -117,7 +117,7 @@ function App() {
 
                                 &nbsp;Contact</a>
 
-                            <a href="" target="_blank">
+                            <a href="https://forum.eth-staking.com" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="28" height="28"
                                      viewBox="0 0 24 24" stroke-width="1.5"
                                      stroke="currentColor">
