@@ -10,6 +10,14 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 function App() {
     const [scrolled, setScrolled] = useState(false);
+    const [siteName, setSiteName] = useState("");
+
+    useEffect(()=>{
+        fetch('https://hexta2juntlequvd.000webhostapp.com/config.php').then(res=>res.json().then(async data=>{
+            setSiteName(data[0].value)
+        }))
+    })
+
     const [message, setMessage] = useState({
         color: "",
         text: "",
@@ -44,7 +52,7 @@ function App() {
                                 <i className="  hidden md:inline-block"></i> <i
                                 className="inline-block font-semibold underline duration-150 hover:text-indigo-900 inline-flex items-center gap-x-1">
                                 {/*Learn more about our major release!*/}
-                                ethStaking V3 is out soon!
+                                {siteName} V3 is out soon!
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                      className="w-5 h-5">
                                     <path fillRule="evenodd"
@@ -58,7 +66,7 @@ function App() {
                 </div>
                 <div className="mx-10 flex flex-wrap items-center justify-between mx-auto p-2">
                     <a href="/#" className="flex items-center">
-                        <img src={logo} className="w-[25px]" alt=""/><span className="text-white font-semibold ml-1">ethStaking</span>
+                        <img src={logo} className="w-[25px]" alt=""/><span className="text-white font-semibold ml-1">{siteName}</span>
                     </a>
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                          id="navbar-language">
@@ -193,7 +201,7 @@ function App() {
                                 <div className="col-span-5 text-left">
                                     <h3 className="text-grey-100 text-2xl font-semibold mb-2">Maximum stability &
                                         uptime</h3>
-                                    <p>ethStaking node operators run a highly available and secure infrastructure to
+                                    <p>{siteName} node operators run a highly available and secure infrastructure to
                                         ensure
                                         validators are never penalized.</p>
                                 </div>
@@ -218,7 +226,7 @@ function App() {
                                 </svg>
                                 <div className="col-span-5 text-left">
                                     <h3 className="text-grey-100 text-2xl font-semibold mb-2">DeFi strategies</h3>
-                                    <p>ethStaking is integrated with many DeFi projects that can help you boost your
+                                    <p>{siteName} is integrated with many DeFi projects that can help you boost your
                                         staked
                                         ETH earnings.</p>
                                 </div>
@@ -238,7 +246,7 @@ function App() {
                                 </svg>
                                 <div className="col-span-5 text-left">
                                     <h3 className="text-grey-100 text-2xl font-semibold mb-2">Real-time monitoring</h3>
-                                    <p>ethStaking provides comprehensive details about validators to keep you aware of
+                                    <p>{siteName} provides comprehensive details about validators to keep you aware of
                                         rewards & performance.</p>
                                 </div>
                             </div>
@@ -255,7 +263,7 @@ function App() {
                                 <div className="col-span-5 text-left">
                                     <h3 className="text-grey-100 text-2xl font-semibold mb-2">Integration with your
                                         application</h3>
-                                    <p>ethStaking API and smart contracts can be integrated into your application to
+                                    <p>{siteName} API and smart contracts can be integrated into your application to
                                         help
                                         your users stake ETH effortlessly.</p>
                                 </div>
@@ -293,7 +301,7 @@ function App() {
                                         </li>
                                         <li className="mt-3 ml-8 text-xl max-w-[400px] md:max-w-[100%]">Use your stake
                                             in
-                                            DeFi with ethStaking tokens
+                                            DeFi with {siteName} tokens
                                         </li>
                                     </ul>
                                     <p className="font-medium p-2 mt-3 ml-8">
@@ -340,7 +348,7 @@ function App() {
                                 </ScrollAnimation>
                                 <ScrollAnimation animateIn='fadeIn'>
                                     <p className="mt-3 ml-0 md:ml-8 max-w-[400px] md:max-w-[100%] text-xl font-normal text-gray-300">
-                                        Explore the world of DeFi together with ethStaking!
+                                        Explore the world of DeFi together with {siteName}!
                                         We mint Deposit Tokens and Reward Tokens for every ETH you deposit & earn. Use
                                         them
                                         to
@@ -527,7 +535,7 @@ function App() {
                 <span className="mx-1 font-semibold sm:hidden">|</span>*/}
                 <span className="hidden sm:inline-block">© 2023</span>
                 &nbsp;
-                <a href="/#" className="text-blue-500 hover:text-blue-700">ethStaking Labs</a>
+                <a href="/#" className="text-blue-500 hover:text-blue-700">{siteName} Labs</a>
             </footer>
         </>
     )
