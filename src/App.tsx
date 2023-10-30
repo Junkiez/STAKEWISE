@@ -479,7 +479,7 @@ function App() {
                                         setMessage({color: "red", text: "Please, fill in all fields"})
                                     }
                                     }
-                                    className="space-y-5 w-64 md:w-96"
+                                    className="space-y-5 w-64 md:w-[27em]"
                                 >
                                     <div>
                                         <label className="font-medium">
@@ -515,7 +515,7 @@ function App() {
                                         <p className="text-center text-lime-500">{message.text}</p> :
                                         <p className="text-center text-red-500">{message.text}</p>}
                                     <button type="submit"
-                                            className="px-5 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg"
+                                            className="px-12 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg"
                                     >
                                         Send
                                     </  button>
