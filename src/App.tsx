@@ -43,8 +43,8 @@ function App() {
 
     return (<>
             <nav
-                className={`${scrolled ? 'bg-blue-600' : 'bg-transparent'}  transition-all fixed top-0 z-20 border-gray-200 w-[100%]`}>
-                <div className="bg-gradient-to-r h-[50px] from-cyan-400 to-lime-300 w-[100%]">
+                className={`${scrolled ? 'bg-sky-600' : 'bg-transparent'}  transition-all fixed top-0 z-20 border-gray-200 w-[100%]`}>
+                <div className="bg-gradient-to-r h-[50px] from-sky-400 to-purple-300 w-[100%]">
                     <div
                         className="mx-auto px-4 py-1 flex items-start justify-between text-black sm:items-center md:px-8  w-[100%]">
                         <div className="flex-1 justify-center flex items-start gap-x-4 sm:items-center">
@@ -72,7 +72,7 @@ function App() {
                          id="navbar-language">
                         <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent">
                             <a href="#stake"
-                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-cyan-300 md:p-0 text-white md:hover:text-sky-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700"
                                aria-current="page">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28"
                                      viewBox="0 0 24 24"
@@ -84,7 +84,7 @@ function App() {
                                 &nbsp;Stake</a>
 
                             <a href="#about"
-                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-cyan-300 md:p-0 text-white md:hover:text-sky-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28"
                                      viewBox="0 0 32 32"
                                      stroke-width="1.5">
@@ -94,7 +94,7 @@ function App() {
                                 &nbsp;About</a>
 
                             <a href="#features"
-                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-cyan-300 md:p-0 text-white md:hover:text-sky-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28"
                                      viewBox="0 0 24 24"
                                      stroke-width="1.5">
@@ -104,7 +104,7 @@ function App() {
                                 &nbsp;Features</a>
 
                             <a href="#integration"
-                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-cyan-300 md:p-0 text-white md:hover:text-sky-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="28" height="28"
                                      viewBox="0 0 24 24"
                                      stroke-width="1.5" stroke="#fff">
@@ -115,7 +115,7 @@ function App() {
                                 &nbsp;Integration</a>
 
                             <a href="#contact"
-                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                               className="flex flex-row block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-cyan-300 md:p-0 text-white md:hover:text-sky-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
                                      viewBox="0 0 24 24"
                                      stroke-width="1.5" fill="#fff">
@@ -158,7 +158,7 @@ function App() {
             </nav>
 
             <header className="w-[100%] flex flex-col items-center justify-center">
-                <h1 className="text-7xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-cyan-500 m-10">ETH
+                <h1 className="text-7xl text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-700 to-cyan-500 m-10">ETH
                     staking<br/>
                     made effortless</h1>
                 <p className="w-[300px] md:w-[600px] text-2xl text-gray-400 font-normal">Our resilient infrastructure
@@ -166,7 +166,7 @@ function App() {
                     strategies give you the best ETH staking experience in the
                     game.</p>
                 <a href={'https://app.eth-staking.com'}
-                   className="px-5 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg">
+                   className="px-5 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-sky-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg">
                     Start staking
                 </a>
             </header>
@@ -185,7 +185,7 @@ function App() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 m-2">
                         <ScrollAnimation animateIn='fadeIn'>
                             <div
-                                className="grid grid-cols-6 max-w-[400px] md:max-w-[100%] gap-4 transition-all p-8 md:p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
+                                className="grid grid-cols-6 max-w-[400px] md:max-w-[100%] gap-4 transition-all p-8 md:p-8 border-2 border-transparent hover:border-sky-500 hover:shadow-lg hover:shadow-sky-500/50 rounded-lg">
                                 <svg className="col-auto" width={50} height={50} xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 60 60">
                                     <g transform="matrix(.7742 0 0 .7742 -8.71 -8.71)" fill="#fd5d93">
@@ -209,7 +209,7 @@ function App() {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn='fadeIn'>
                             <div
-                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[100%]  transition-all p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
+                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[100%]  transition-all p-8 border-2 border-transparent hover:border-sky-500 hover:shadow-lg hover:shadow-sky-500/50 rounded-lg">
                                 <svg className="col-auto" width={50} height={50} xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 76.002 60">
                                     <path
@@ -234,7 +234,7 @@ function App() {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn='fadeIn'>
                             <div
-                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[100%]  transition-all p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
+                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[100%]  transition-all p-8 border-2 border-transparent hover:border-sky-500 hover:shadow-lg hover:shadow-sky-500/50 rounded-lg">
                                 <svg className="col-auto" width={50} height={50} xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 62.553 60">
                                     <g fill="#ff8d72">
@@ -253,7 +253,7 @@ function App() {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn='fadeIn'>
                             <div
-                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[100%]  transition-all p-8 border-2 border-transparent hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/50 rounded-lg">
+                                className="grid grid-cols-6 gap-4 max-w-[400px] md:max-w-[100%]  transition-all p-8 border-2 border-transparent hover:border-sky-500 hover:shadow-lg hover:shadow-sky-500/50 rounded-lg">
                                 <svg className="col-auto" width={50} height={50} xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 60 60">
                                     <path
@@ -306,7 +306,7 @@ function App() {
                                     </ul>
                                     <p className="font-medium p-2 mt-3 ml-8">
                                         <a href="https://app.eth-staking.com"
-                                           className="font-semibold underline duration-150 text-blue-600 hover:text-blue-100 inline-flex items-center gap-x-1">
+                                           className="font-semibold underline duration-150 text-sky-600 hover:text-blue-100 inline-flex items-center gap-x-1">
                                             Find out more
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                  fill="currentColor"
@@ -425,7 +425,7 @@ function App() {
                                         <span
                                             className="text-grey-100 text-2xl font-semibold mb-2 ml-[14px]">Chat on Telegram</span>
                                     </div>
-                                    <a className="mr-24 hover:text-white text-blue-600 ml-[64px]">Open chat</a>
+                                    <a className="mr-24 hover:text-white text-sky-600 ml-[64px]">Open chat</a>
                                 </div>
 
                                 <div className="grid grid-rows-2 items-left justify-center m-8">
@@ -439,12 +439,12 @@ function App() {
                                         <span
                                             className="text-grey-100 text-2xl font-semibold mb-2 ml-[14px]">Chat on Discord</span>
                                     </div>
-                                    <a className="mr-24 hover:text-white text-blue-600 ml-[64px]">Open chat</a>
+                                    <a className="mr-24 hover:text-white text-sky-600 ml-[64px]">Open chat</a>
                                 </div>
                                 */}
                                 <div className="grid grid-rows-2 items-left justify-center m-8">
                                     <div className="flex items-center">
-                                        <svg fill="#0077ff" height="50" width="50" version="1.1" id="Layer_1"
+                                        <svg className="fill-sky-500" fill="#0077ff" height="50" width="50" version="1.1" id="Layer_1"
                                              xmlns="http://www.w3.org/2000/svg"
                                              xmlnsXlink="http://www.w3.org/1999/xlink"
                                              viewBox="0 0 512 512" xmlSpace="preserve">
@@ -463,7 +463,7 @@ function App() {
                                         </svg>
                                         <span className="text-grey-100 text-2xl font-semibold mb-2 ml-[14px]">Send an email</span>
                                     </div>
-                                    <a className="mr-10 hover:text-white text-blue-600 ml-[64px]"
+                                    <a className="mr-10 hover:text-white text-sky-500 ml-[64px]"
                                        href="mailto:info@eth-staking.io">info@eth-staking.io</a>
                                 </div>
                             </div>
@@ -489,7 +489,7 @@ function App() {
                                             type="text"
                                             value={form.subject}
                                             onChange={e => setForm({...form, subject: e.target.value})}
-                                            className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border border-blue-900 focus:border-blue-700 shadow-sm rounded-lg"
+                                            className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border border-sky-900 focus:border-sky-700 shadow-sm rounded-lg"
                                         />
                                     </div>
                                     <div>
@@ -500,7 +500,7 @@ function App() {
                                             type="email"
                                             value={form.email}
                                             onChange={e => setForm({...form, email: e.target.value})}
-                                            className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border border-blue-900 focus:border-blue-700 shadow-sm rounded-lg"
+                                            className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border border-sky-900 focus:border-sky-700 shadow-sm rounded-lg"
                                         />
                                     </div>
                                     <div>
@@ -509,13 +509,13 @@ function App() {
                                         </label>
                                         <textarea value={form.message}
                                                   onChange={e => setForm({...form, message: e.target.value})}
-                                                  className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border border-blue-900 focus:border-blue-700 shadow-sm rounded-lg"></textarea>
+                                                  className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border border-sky-900 focus:border-sky-700 shadow-sm rounded-lg"></textarea>
                                     </div>
                                     {message.color == 'lime' ?
                                         <p className="text-center text-lime-500">{message.text}</p> :
                                         <p className="text-center text-red-500">{message.text}</p>}
                                     <button type="submit"
-                                            className="px-12 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg"
+                                            className="px-12 text-md font-bold m-5 py-3 text-white duration-150 rounded-lg bg-gradient-to-r from-sky-700 to-cyan-500 hover:from-blue-500 hover:to-cyan-700 active:shadow-lg"
                                     >
                                         Send
                                     </  button>
@@ -527,15 +527,15 @@ function App() {
             </main>
             <footer className="sm:w-[95%] w-full flex flex-wrap justify-end m-4 font-normal text-sm items-center">
                 <a href="https://stakewise.io/terms-and-conditions"
-                   className="text-blue-500 hover:text-blue-700 mr-1 sm:mr-2">Terms & Conditions</a>
+                   className="text-sky-500 hover:text-cyan-400 mr-1 sm:mr-2">Terms & Conditions</a>
                 <span className="mx-1 font-semibold sm:hidden">|</span>
-                <a href="https://wellfound.com/company/ethstaking/" target="_blank" className="text-blue-500 hover:text-blue-700 mr-1 sm:mr-2">Careers</a>
+                <a href="https://wellfound.com/company/ethstaking/" target="_blank" className="text-sky-500 hover:text-cyan-400 mr-1 sm:mr-2">Careers</a>
                 <span className="mx-1 font-semibold sm:hidden">|</span>
-                {/*<a href="/#" className="text-blue-500 hover:text-blue-700 mr-1 sm:mr-2">GitHub</a>
+                {/*<a href="/#" className="text-sky-500 hover:text-cyan-400 mr-1 sm:mr-2">GitHub</a>
                 <span className="mx-1 font-semibold sm:hidden">|</span>*/}
                 <span className="hidden sm:inline-block">© 2023</span>
                 &nbsp;
-                <a href="/#" className="text-blue-500 hover:text-blue-700">{siteName} Labs</a>
+                <a href="/#" className="text-sky-500 hover:text-cyan-400">{siteName} Labs</a>
             </footer>
         </>
     )
