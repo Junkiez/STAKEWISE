@@ -64,7 +64,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-                <div className="mx-10 flex flex-wrap items-center justify-between mx-auto p-2">
+                <div className="mx-8 flex flex-wrap items-center justify-between mx-auto p-2">
                     <a href="/#" className="flex items-center">
                         <img src={logo} className="w-[25px]" alt=""/><span className="text-white font-semibold ml-1">{siteName}</span>
                     </a>
